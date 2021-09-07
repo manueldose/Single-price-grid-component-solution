@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+.headerInfo {
+  margin-block-start: 1.25rem;
+  margin-inline-start: 1.5rem;
+  margin-inline-end: .85rem;
+  min-inline-size: 15rem;
+  margin-block-end: 1.5rem;
+}
+
+.headerInfo p {
+  font: var(--body1-regular);
+  color: var(--grayish-blue);
+  line-height: 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  margin-block-end: 1rem;
+  font: var(--title);
+  color: var(--cyan);
+}
+
+.headSubtitle {
+  font: var(--subtitle);
+  color: var(--bright-yellow);
+  margin-inline-end: 1.25rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .headerInfo {
+    margin-inline-start: 3rem;
+    margin-inline-end: 2.85rem;
+  }
+}

@@ -1,0 +1,92 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  background: var(--cyan);
+  min-block-size: 9rem;
+}
+
+.subscriptionMonth {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  gap: .75rem;
+  margin-inline-start: 1.5rem;
+  /* margin-inline-end: 1.75rem; */
+  margin-block-start: 1.25rem;
+  min-inline-size: 12rem;
+  margin-block-end: 1.5rem;
+}
+
+.subscriptionTitle {
+  margin: 0;
+  font: var(--body1-medium);
+  color: var(--white);
+  /* margin-block-end: .5rem; */
+}
+
+.subscriptionPrice {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.price {
+  font: var(--title);
+  color: var(--white);
+}
+
+.priceMonth {
+  font: var(--body1-regular);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.subscriptionMonth p {
+  font: var(--body1-regular);
+  color: var(--white);
+  margin: 0;
+  margin-block-end: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  .subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscriptionMonth {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-inline-start: 1.5rem;
+      margin-inline-end: 1.75rem;
+      margin-block-start: 1.25rem;
+      min-inline-size: 12rem;
+      margin-block-end: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .subscriptionMonth {
+      gap:.75rem;
+      margin-block-start: 1.75rem;
+      margin-inline-start: 0;
+      margin-inline-end: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .subscriptionMonth {
+      gap:1.25rem;
+      margin: 0;
+      min-inline-size: 16rem;
+  }
+}

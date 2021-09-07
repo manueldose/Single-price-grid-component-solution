@@ -1,0 +1,80 @@
+/* .page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "header header" "subscription info";
+  block-size: 75vh;
+  inline-size: 60%;
+  overflow: hidden;
+  margin-block-start: 5%;
+  border-radius: .25rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+} */
+.page {
+  display: block;
+  block-size: 83%;
+  inline-size: 60%;
+  overflow: hidden;
+  margin-block-start: 5%;
+  border-radius: .25rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/*
+.page .header {
+  grid-area: header;
+}
+
+.page .subscription {
+  grid-area: subscription;
+}
+
+.page .info {
+  grid-area: info;
+
+} */
+
+@media screen and (min-width: 768px) {
+
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "header header" "subscription info";
+    block-size: 50vh;
+    inline-size: 70%;
+    overflow: hidden;
+    margin-block-start: 30%;
+    border-radius: .25rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+
+  .page .header {
+    grid-area: header;
+  }
+
+  .page .subscription {
+    grid-area: subscription;
+  }
+
+  .page .info {
+    grid-area: info;
+
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page {
+    block-size: 45vh;
+    inline-size: 65%;
+    margin-block-start: 30%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .page {
+    block-size: 40vh;
+    inline-size: 50%;
+    margin-block-start: 25%;
+  }
+}

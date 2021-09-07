@@ -1,0 +1,93 @@
+:root {
+    font-size: 12px;
+  --body-back: hsl(218, 100%, 94%);
+  --white: hsl(210, 100%, 100%);
+  --cyan: hsl(179, 62%, 43%);
+  --cyan-light: hsl(179, 51%, 62%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --body1-regular: 400 0.875rem/1.25rem Karla;
+  --body1-medium: 700 0.875rem/1.25rem Karla;
+  --title: 700 1.375rem/1.75rem Karla;
+  --subtitle: 700 1rem/1.75rem Karla;
+}
+
+body {
+  font: var(--body1-regular);
+  margin: 0;
+  color: var(--grayish-blue);
+  background: var(--body-back);
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 425px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "header header" "subscription info";
+    block-size: 75vh;
+    inline-size: 60%;
+    overflow: hidden;
+    margin-block-start: 5%;
+    border-radius: .25rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+
+  .page .header {
+    grid-area: header;
+  }
+
+  .page .subscription {
+    grid-area: subscription;
+  }
+
+  .page .info {
+    grid-area: info;
+
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .page {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "header header" "subscription info";
+    block-size: 50vh;
+    inline-size: 60%;
+    overflow: hidden;
+    margin-block-start: 5%;
+    border-radius: .25rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+
+  .page .header {
+    grid-area: header;
+  }
+
+  .page .subscription {
+    grid-area: subscription;
+  }
+
+  .page .info {
+    grid-area: info;
+
+  }
+}
