@@ -65,16 +65,16 @@
 
 @media screen and (min-width: 1024px) {
   .page {
-    block-size: 45vh;
+    block-size: 70vh;
     inline-size: 65%;
-    margin-block-start: 30%;
+    margin-block-start: 5%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .page {
-    block-size: 40vh;
+    block-size: 60vh;
     inline-size: 50%;
-    margin-block-start: 25%;
+    margin-block-start: 10%;
   }
 }
