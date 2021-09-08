@@ -14,7 +14,7 @@
   /* margin-inline-start: 1.6rem; */
   margin-inline-end: 3.75rem;
   /* min-inline-size: 15rem; */
-  margin-block-start: 1.25rem;
+  margin-block-start: 2.25rem;
   margin-inline-start: 1.5rem;
   /* margin-inline-end: .85rem; */
   min-inline-size: 10rem;
@@ -43,7 +43,8 @@
 @media screen and (min-width: 1024px) {
 
   .infoContainer {
-    gap: 1.25rem;
+    gap: 1.5rem;
     margin-inline-start: 3rem;
+    margin-block-start: 1.5rem;
   }
 }

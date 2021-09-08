@@ -40,10 +40,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "header header" "subscription info";
-    block-size: 50vh;
+    block-size: 60vh;
     inline-size: 70%;
     overflow: hidden;
-    margin-block-start: 30%;
     border-radius: .25rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
@@ -67,7 +66,6 @@
   .page {
     block-size: 70vh;
     inline-size: 65%;
-    margin-block-start: 5%;
   }
 }
 
@@ -75,6 +73,5 @@
   .page {
     block-size: 60vh;
     inline-size: 50%;
-    margin-block-start: 10%;
   }
 }
